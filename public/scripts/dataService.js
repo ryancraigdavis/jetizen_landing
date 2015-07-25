@@ -6,7 +6,7 @@ var app = angular.module('landingApp');
 			console.log(procedure);
 			var deferred = $q.defer();
 			$http({
-				method: 'GET', url: 'http://localhost:9000/procedure:name?q='+procedure
+				method: 'GET', url: 'http:www.tripsimplicity.com/procedure:name?q='+procedure
 			}).success(function(data) {
 			    deferred.resolve(data);
 			}).error(function(err){
