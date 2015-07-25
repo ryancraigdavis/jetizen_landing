@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Medical Travel</title>
+    <!-- Latest compiled and minified CSS -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+<!-- Optional theme -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.css"> -->
+
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body ng-app="landingApp" class="custom">
+   <div class="container pageOne" ng-controller="mainCtrl">
+             <h2>Get <strong>{{procedureName}}</strong> overseas and save up to 60%</h2>
+               <h4>
+                   Major {{procedureDesc}} doesn't have to cost a fortune. <a href="#">Top {{procedureSurg}}</a> in other countries are ready to give you the same high-quality care for up to 60% less than US prices.
+               </h4>
+
+              <div class="image"><img src="images/stock/smiling_woman1.jpg"/></div>
+
+        <div>
+              <br>
+               <a class="aU" href="results.html"><button id="search" type="button" class="btn btn-default buttonStyle">Nice. What do the prices look like?</button></a>
+              <br>               
+        </div>
+
+              
+               
+               <p>
+                   When we looked into traveling for {{procedureDesc}}, we found it was difficult to compare options.  Would we get the same treatment everywhere?  Were the prices accurate, or were there hidden costs?
+                </p>
+                <p>We ended up with a ton of notes just trying to keep track of flight and hotel costs plus the cost of the {{procedureDesc}} in each country -- it was hard to compare the real cost from country to country.
+                 </p>
+                 <p>
+                     So we thought we would share the results with you, and while we were at it, we built a tool for comparison shopping across the world.  You can see the "all-in" price for the {{procedureDesc}} plus the flight and hotel costs from your home city to all the major {{procedureCntr}} centers around the world.  These are the best travel prices currently listed online, and the preferred treatment prices we've negotiated with our network of top {{procedureSurg}} worldwide.  </p>
+                     <p>Every treatment option you see here is offered by a well-respected and highly-rated medical provider in the host nation.  If you decide to go ahead, we'll be on call to walk you through the process step by step. 
+                 </p>
+                 
+        <div>
+              <br>
+               <a href="results.html"><button id="search" type="button" class="btn btn-default buttonStyle">Show Me the Sample Prices</button></a>
+              <br>
+        </div>
+
+                 
+                                                   
+<!--
+                <div class="col-xs-3">
+                    <label>Choose a proceedure:</label>
+                </div>
+-->
+<!--
+                <div class="col-xs-9">   
+                    <select>
+                        <option>Composite Filling</option>
+                        <option>Implant + Crown</option>
+                        <option>4-post denture</option>
+                    </select>
+                </div>
+-->
+
+<!--
+        <div class="row">
+                    <div class="col-xs-3">
+                          <label>Departure airport:</label>
+                    </div>
+                    <div class="col-xs-9">                          
+                          <input type="text" class="form-control" id="usr">
+                    </div>
+           </div>
+-->
+
+              </div><!-- page one -->
+     
+<!--       <p>Quality:  US dental schools train many foreign students who return to their home countries to live near family.  They open dental offices with the latest high-tech equipment and cutting-edge skills, so the quality of care is very high.  But their costs are very low --- wages for dental assistants, office staff, office rent, and utities --- and so is the dentist's cost of living.  He or she just doesn't need as much to live in their home country.  All of this adds up to big savings that the dentist passes on to you --- giving you a discount of 25% to 60% on the same dental care you get in the US, even after considering the cost of travel. 
+       Partnership with hotels, coordinators, etc.  </p> -->
+       
+   </div>
+    
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/javaScript.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular.min.js"></script>
+      
+
+      <script src="scripts/app.js"></script>
+      <script src="scripts/mainCtrl.js"></script>
+
+      <script src="scripts/dataService.js"></script>
+</body>
+
+</html>

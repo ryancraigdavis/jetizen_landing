@@ -1,0 +1,90 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+ 
+body {
+    font-family: 'Lato', sans-serif;
+    /*background: transparent linear-gradient(90deg, #1BC6DB  10%, #13B5E8  90%) repeat scroll 0% 0%;*/
+    background: url("gradient.jpg") no-repeat center center fixed; 
+}
+ 
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Lato', sans-serif;
+    color: black;
+    line-height: 1.3;
+}
+ 
+ 
+p, label, select, .btn, td {
+    font-family: 'Lato', sans-serif;
+    color: black;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: normal;
+    text-shadow: none;
+}
+ 
+ 
+.container {
+/*    max-width: 750px;*/
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+body label , body h3 {
+    color: #fff;
+}
+ 
+ 
+/************  page one ********************/
+.pageOne input[type=text] {
+    width: auto;
+}
+.buttonStyle {
+    background-image: url();
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    margin: 0 auto;
+    display: block;
+}
+.buttonStyle:hover {
+    background-color: rgba(255,255,255,.30)
+}
+a.aU ,
+a.aU:active , 
+a.aU:focus ,
+a.aU:hover {
+    text-decoration: none !important;
+    outline: 0 !important;
+}
+ 
+ 
+/***************** page two ***********************/
+.buttonStyle2 {
+    background-color: orange;
+    display: block;
+    margin: 100px auto;
+    background-image: none;
+}
+.pageTwo table {
+    color: black;
+}
+ 
+.comp_report {
+    background: #fff;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 20px;
+}
+
+img{
+    width:50%;
+    height:auto;
+    margin-right: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    float: left;
+}
