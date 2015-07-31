@@ -27,14 +27,14 @@ p, label, select, .btn, td {
 /*    max-width: 750px;*/
     padding-left: 90px;
     padding-right: 90px;
-    padding-top: 40px;
-    padding-bottom: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
 }
  
 body label , body h3 {
-    color: #fff;
+    color: black;
 }
  
  
@@ -81,7 +81,7 @@ a.aU:hover {
 }
 
 img{
-    width:50%;
+    width:25%;
     height:auto;
     margin-right: 2em;
     margin-top: 1em;

@@ -10,15 +10,17 @@
 
 <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="assets/css/styles.css">
+<link rel="stylesheet" href="assets/css/jquery.modal.css">
+<link rel="stylesheet" href="bower_components/chosen/chosen.min.css">
 </head>
 <body ng-app="landingApp" class="custom">
    <div class="container pageOne" ng-controller="mainCtrl">
-             <h2>Get <strong>{{procedureName}}</strong> overseas and save up to 60%</h2>
+             <h2>Get <strong>{{procedureName}}</strong> overseas and save up to 60%!</h2>
                <h4>
                    Major {{procedureDesc}} doesn't have to cost a fortune. <a href="#">Top {{procedureSurg}}</a> in other countries are ready to give you the same high-quality care for up to 60% less than US prices.
                </h4>
 
-              <div class="image"><img src="images/Stock/smiling_woman1.jpg"/></div>
+       <!--        
 
         <div>
               <br>
@@ -41,9 +43,116 @@
         <div>
               <br>
                <a href="results.html"><button id="search" type="button" class="btn btn-default buttonStyle">Show Me the Sample Prices</button></a>
-              <br>
+              <br> -->
         </div>
+        <div class="container">
+       <div class="pageTwo">
+             <h2>Sample Cost Comparison</h4><br>
+                <p>
+                 <small>For more options (exact travel dates, locations and costs of each provider, multiple procedures in one trip), please create an account or log in.</small>
+                 </p>
+              <br><br>
+              
+              <div class="comp_report">
+              
+<!--              <h4>Sample Results</h4>-->
+               <p><strong>Procedure:</strong>  {{procedure}}.</p>
+              <br><br>
 
+
+           <p><small>The table shows lowest estimated costs and time from major US cites to our trusted providers in these regions.  Your actual costs will depend on your precise travel dates, medical condition, and specific provider chosen.</small></p>
+
+
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Region</th>
+        <th>Total Cost<br>(travel+medical)</th>
+        <th>Total Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Major US Cities</td>
+        <td>${{usPrice}}*</td>
+        <td>{{usTime}} day</td>
+      </tr>
+      <tr>
+        <td>Central America</td>
+        <td>${{caPrice}}</td>
+        <td>{{caTime}} days</td>
+      </tr>
+      <tr>
+        <td>South America</td>
+        <td>${{saPrice}}</td>
+        <td>{{saTime}} days</td>
+      </tr>
+      <tr>
+        <td>Eastern Europe</td>
+        <td>${{eePrice}}</td>
+        <td>{{eeTime}} days</td>
+      </tr>
+      <tr>
+        <td>Southeast Asia</td>
+        <td>${{seaPrice}}</td>
+        <td>{{seaTime}} days</td>
+      </tr>
+      <tr>
+        <td>East Asia</td>
+        <td>${{eaPrice}}</td>
+        <td>{{eaTime}} days</td>
+      </tr>
+      <tr>
+        <td>West Virginia</td>
+        <td>${{wvPrice}}</td>
+        <td>{{wvTime}} days</td>
+      </tr>
+    </tbody>
+  </table>
+<p><small>United States cost estimates are from <a href="""">{{webTitle}}</a>.</small>    
+</p>        
+
+        
+        </div>
+        
+        
+         <div>
+<div class="image"><img src="images/Stock/smiling_woman1.jpg"/></div><h2>Get Your Custom Report</h2>
+                <p>
+                 You'll get a detailed list of providers in each location, including their prices and financing options.  Refine it using your exact travel dates and medical needs (including getting multiple procedures in one trip).  Save the results in your account for easy access any time.  
+                 <br><br>Getting started is easy:
+                 </p>
+
+                <select data-placeholder="Choose a Procedure" class="chosen-select" multiple="" style="width: 350px;" tabindex="-1">
+                  <option value="Dental Implants">Dental Implants</option>
+                  <option value="Dental Crowns">Dental Crowns</option>
+                  <option value="Nose Job">Nose Job</option>
+                  <option value="Breast Implants">Breast Implants</option>
+                  <option value="Tummy Tuck">Tummy Tuck</option>
+                  <option value="Botox">Botox</option>
+                </select>                       
+                
+                <select data-placeholder="I'm Departing from" class="chosen-select" style="width: 350px;" tabindex="-1">
+                  <option value="West">West</option>
+                  <option value="Central">Central</option>
+                  <option value="East">East</option>
+                </select>       
+           
+
+           <form action="" class="login_form modal" id="ex2" style="display:none;">
+  <h3>We apologize, we're revising the system, and if you'd like a report when it's ready, please tell us how to contact you.</h3>
+  <p><label>Name:</label><input type="text"></p>
+  <p><label>Email:</label><input type="text"></p>
+  <p><input type="submit" value="Submit"></p>
+</form>
+ 
+             
+             <br><br>
+              <button type="button" class="btn btn-default buttonStyle" ><a href="#ex2" rel="modal:open">Show my options</a></button>
+         </div>
+       </div><!-- page two -->
+       
+   </div><!-- container -->
                  
                                                    
 <!--
@@ -76,9 +185,6 @@
      
 <!--       <p>Quality:  US dental schools train many foreign students who return to their home countries to live near family.  They open dental offices with the latest high-tech equipment and cutting-edge skills, so the quality of care is very high.  But their costs are very low --- wages for dental assistants, office staff, office rent, and utities --- and so is the dentist's cost of living.  He or she just doesn't need as much to live in their home country.  All of this adds up to big savings that the dentist passes on to you --- giving you a discount of 25% to 60% on the same dental care you get in the US, even after considering the cost of travel. 
        Partnership with hotels, coordinators, etc.  </p> -->
-       
-   </div>
-    
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -88,8 +194,11 @@
 
       <script src="scripts/app.js"></script>
       <script src="scripts/mainCtrl.js"></script>
-
       <script src="scripts/dataService.js"></script>
+      <script src="assets/js/chosen.js"></script>
+      <script src="assets/js/jquery.modal.min.js"></script>
+      <script src="bower_components/chosen/chosen.jquery.min.js"></script>
+      
 </body>
 
 </html>
