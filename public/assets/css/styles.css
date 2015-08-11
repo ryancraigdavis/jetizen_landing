@@ -1,8 +1,12 @@
 @import url(http://fonts.googleapis.com/css?family=Lato);
  
-body {
-    font-family: 'Lato', sans-serif;
+body{
+    color: #777;
+    font-family: "Source Sans Pro", sans-serif;
     /*background: transparent linear-gradient(90deg, #1BC6DB  10%, #13B5E8  90%) repeat scroll 0% 0%;*/
+}
+
+.main{
     background: url("gradient.jpg") no-repeat center center fixed; 
 }
  
@@ -14,7 +18,7 @@ h1,h2,h3,h4,h5,h6 {
  
  
 p, label, select, .btn, td {
-    font-family: 'Lato', sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     color: black;
     font-size: 17px;
     text-decoration: none;
@@ -37,7 +41,86 @@ body label , body h3 {
     color: black;
 }
  
- 
+.header{
+    width: 100%;
+    height: 4em;
+    background: #fff;
+    display: relative;
+}
+
+.header img{
+    height: 4em;
+    width: auto;
+
+}
+
+.introSlide img{
+    height: auto;
+    width: 100%;
+    display: relative;
+}
+
+.introSlide h2{
+    top: 200px; 
+    position: absolute;
+    right:25px;
+}
+
+.introSlide h1{
+    top: 240px; 
+    position: absolute;
+    right:25px;
+}
+
+.introSlide button{
+    top: 310px; 
+    position: absolute;
+    right:25px;
+}
+
+.three-column-module {
+  width: 100%;
+  margin: 2em auto 0 auto;
+  border-left: 1px solid #cfcfcf;
+  border-right: 1px solid #cfcfcf;
+   background: #fff;
+   text-align: center;
+}
+.icon-block {
+  display: inline-block;
+  width: 240px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: none;
+  vertical-align: top;
+}
+.headerNav{
+    text-align: center;
+    vertical-align: middle;
+    display: block;
+}
+
+.headerNav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.headerNav li{
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 5px;
+}
+.nav{
+     display: inline-block;
+
+}
+
+#block-2 {
+  border-left: 1px solid #cfcfcf;
+  border-right: 1px solid #cfcfcf;
+}
+
 /************  page one ********************/
 .pageOne input[type=text] {
     width: auto;
@@ -46,12 +129,23 @@ body label , body h3 {
     background-image: url();
     background-color: transparent;
     color: black;
+    border: 1px solid transparent;
+    margin: 0 auto;
+    display: block;
+}
+
+.pageTwo .buttonStyle {
+    background-image: url();
+    background-color: transparent;
+    color: black;
     border: 1px solid black;
     margin: 0 auto;
     display: block;
 }
+
 .buttonStyle:hover {
-    background-color: rgba(255,255,255,.30)
+    background: url("gradient.jpg");
+    color: white;
 }
 a.aU ,
 a.aU:active , 
@@ -84,7 +178,81 @@ img{
     width:25%;
     height:auto;
     margin-right: 2em;
-    margin-top: 1em;
-    margin-bottom: 1em;
     float: left;
 }
+/***************** page three ***********************/
+.pageThree{
+    background: url("boston.jpg") no-repeat center center fixed; 
+}
+
+.pageThree .container{
+    background-color: #fff;
+}
+
+/* Table */
+
+    .table-wrapper {
+        -webkit-overflow-scrolling: touch;
+        overflow-x: auto;
+    }
+
+    table {
+        margin: 0 0 2em 0;
+        width: 100%;
+    }
+
+        table tbody tr {
+            border: solid 1px #e5e5e5;
+            border-left: 0;
+            border-right: 0;
+        }
+
+            table tbody tr:nth-child(2n + 1) {
+                background-color: #f8f8f8;
+            }
+
+        table td {
+            padding: 0.75em 0.75em;
+        }
+
+        table th {
+            color: #646464;
+            font-size: 0.9em;
+            font-weight: 300;
+            padding: 0 0.75em 0.75em 0.75em;
+            text-align: left;
+        }
+
+        table thead {
+            border-bottom: solid 2px #e5e5e5;
+        }
+
+        table tfoot {
+            border-top: solid 2px #e5e5e5;
+        }
+
+        table.alt {
+            border-collapse: separate;
+        }
+
+            table.alt tbody tr td {
+                border: solid 1px #e5e5e5;
+                border-left-width: 0;
+                border-top-width: 0;
+            }
+
+                table.alt tbody tr td:first-child {
+                    border-left-width: 1px;
+                }
+
+            table.alt tbody tr:first-child td {
+                border-top-width: 1px;
+            }
+
+            table.alt thead {
+                border-bottom: 0;
+            }
+
+            table.alt tfoot {
+                border-top: 0;
+            }
